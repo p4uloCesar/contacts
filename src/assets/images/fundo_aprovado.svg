@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1898px" height="1898px" viewBox="0 0 1898 1898" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.701169231 0.0954148472 188.203708 0.0954148472 188.203708 949.011627 0.701169231 949.011627"></polygon>
+        <polygon id="path-3" points="0 0.795876923 948.916627 0.795876923 948.916627 188.300492 0 188.300492"></polygon>
+        <polygon id="path-5" points="0.701792308 0.0850327511 188.204331 0.0850327511 188.204331 949 0.701792308 949"></polygon>
+        <polygon id="path-7" points="0.988995633 0.795253846 949.904585 0.795253846 949.904585 188.299869 0.988995633 188.299869"></polygon>
+    </defs>
+    <g id="Principal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-1-Copy">
+            <g id="Group-3" opacity="0.4" transform="translate(855.000000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <polygon id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)" points="0.701169231 0.0943777293 94.4534769 949.011627 188.203708 0.0943777293"></polygon>
+            </g>
+            <polygon id="Fill-4" fill-opacity="0.4" fill="#FFFFFF" points="393 173.67404 949 949 555.307052 80"></polygon>
+            <polygon id="Fill-6" fill-opacity="0.4" fill="#FFFFFF" points="80 555.307052 949 949 173.67404 393"></polygon>
+            <g id="Group-10" transform="translate(0.000000, 855.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-9"></g>
+                <polygon id="Fill-8" fill-opacity="0.4" fill="#FFFFFF" mask="url(#mask-4)" points="-0.000622270742 188.300492 948.916627 94.5481846 -0.000622270742 0.795876923"></polygon>
+            </g>
+            <polygon id="Fill-11" fill-opacity="0.4" fill="#FFFFFF" points="173.67404 1505 949 949 80 1342.69295"></polygon>
+            <polygon id="Fill-13" fill-opacity="0.4" fill="#FFFFFF" points="555.307052 1818 949 949 393 1724.32574"></polygon>
+            <g id="Group-17" transform="translate(855.000000, 949.000000)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="Clip-16"></g>
+                <polygon id="Fill-15" fill-opacity="0.4" fill="#FFFFFF" mask="url(#mask-6)" points="188.204331 949.000207 94.4520231 0.0850327511 0.701792308 949.000207"></polygon>
+            </g>
+            <polygon id="Fill-18" fill-opacity="0.4" fill="#FFFFFF" points="1505 1724.32596 949 949 1342.69295 1818"></polygon>
+            <polygon id="Fill-20" fill-opacity="0.4" fill="#FFFFFF" points="1818 1342.69295 949 949 1724.32596 1505"></polygon>
+            <g id="Group-24" transform="translate(948.000000, 855.000000)">
+                <mask id="mask-8" fill="white">
+                    <use xlink:href="#path-7"></use>
+                </mask>
+                <g id="Clip-23"></g>
+                <polygon id="Fill-22" fill-opacity="0.4" fill="#FFFFFF" mask="url(#mask-8)" points="949.906245 0.795253846 0.988995633 94.5475615 949.906245 188.299869"></polygon>
+            </g>
+            <polygon id="Fill-25" fill-opacity="0.4" fill="#FFFFFF" points="1724.32596 393 949 949 1818 555.307052"></polygon>
+            <polygon id="Fill-27" fill-opacity="0.4" fill="#FFFFFF" points="1342.69295 80 949 949 1505 173.67404"></polygon>
+        </g>
+    </g>
+</svg>

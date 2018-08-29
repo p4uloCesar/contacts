@@ -1,0 +1,13 @@
+<div fxLayout="row">
+  <button *ngIf="node.url; else notUrl" mat-button routerLink="{{node.url}}" class="link-subtitle">{{node.name}}</button>
+  <i class="arrow-navigation" *ngIf="node.url">>></i>
+  <ng-template #notUrl>
+    <span class="link-text bread-crumb-span" *ngIf="!node.url">  {{node.name}}</span>
+  </ng-template>
+
+  <ul style="list-style-type: none; padding: 0;">
+    <li *ngFor="let node of node.children">
+      <app-tree-children  [node]="node"></app-tree-children>
+    </li>
+  </ul>
+</div>

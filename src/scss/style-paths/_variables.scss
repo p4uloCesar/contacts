@@ -1,0 +1,57 @@
+@import '../../../node_modules/@angular/material/theming';
+
+@include mat-core();
+
+///* Default theme */
+$fpf-theme-primary: mat-palette($mat-teal, 500);
+$fpf-theme-accent:  mat-palette($mat-red, 300, 600, A700);
+$fpf-theme-warn:    mat-palette($mat-red);
+$fpf-theme:   mat-light-theme($fpf-theme-primary, $fpf-theme-accent, $fpf-theme-warn);
+@include angular-material-theme($fpf-theme);
+
+
+$color-gray: #E57373;
+$color-save: #00A8B2;
+$color-btn-xls: #119541;
+$color-system: #00A8B2 !important;
+
+//--LOGIN --- BACKGROUND
+$background-login: #00A8B2;
+$color-title-logo: #ffffff;
+$color-primary: $color-system;
+
+//-- LOGIN - LOGO
+$img-logo:url('/assets/images/logo/logo_login.png');
+
+
+//Header: 0 0 64px;
+$header-box-shodow: none;
+$header-background-color:#ffffff;
+$header-color: #000;
+$header-logo: url("../../assets/images/logo/logo_menu.png");
+$header-logo-minized: url("../../assets/images/logo/logo_menu_minimized.png");
+$header-border-button: 2px solid rgba(0,0,0,0.12);
+$header-logo-width: 175px;
+$header-logo-topo: transparent;
+  //menu-lateral
+@mixin menuLateral(){
+  background: linear-gradient(0deg, #00A8B2 0%, #00A8B2 100%);
+  -webkit-box-shadow: 3px 0 10px 0 rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 3px 0 10px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 3px 0 10px 0 rgba(0, 0, 0, 0.35);
+  width: 330px;
+}
+
+.ball-active{
+  background-color: $color-system;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px $color-system;
+  background-color: $color-system;
+}
+
+.icon-font{
+  color: #06abca;
+}
+

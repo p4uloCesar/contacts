@@ -1,0 +1,103 @@
+<mat-card class="sub-header-top">
+  <div class="margin-left-head">
+    <app-tree-children [node]="node"></app-tree-children>
+  </div>
+</mat-card>
+<div class="app-component-viewer">
+  <form #componentForm="ngForm" (ngSubmit)="search()" novalidate>
+    <div fxLayoutAlign="center center">
+      <mat-card class="mat-card-pesquisa" fxFlex="90%">
+        <div fxLayout="row"  fxLayoutAlign="start start">
+          <div class="fxField" >
+            <mat-form-field>
+              <mat-select  (ngModelChange)="changeFieldEvent($event)"
+                           name="month_value"
+                           [(ngModel)]="month_value" placeholder="All Month">
+                <mat-option *ngFor="let month_l of month_list" [value]="month_l">{{ month_l }}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="fxField">
+            <mat-form-field>
+              <mat-select (ngModelChange)="changeFieldEvent($event)"
+                          name="year_value"
+                          [(ngModel)]="year_value" placeholder="All Year">
+                <mat-option *ngFor="let year_l of year_list" [value]="year_l">{{ year_l }}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="fxField">
+            <mat-form-field>
+              <mat-select (ngModelChange)="changeFieldEvent($event)"
+                          name="product_value"
+                          [(ngModel)]="product_value" placeholder="All Products">
+                <mat-option *ngFor="let product_l of year_list" [value]="product_l">{{ year_l }}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <app-search-filter [isClearSeach]="isClearSeach" (clearFilterList)="clearFilter(componentForm)"></app-search-filter>-
+          <div class="fxField" fxFlex="100%">
+            <div class="qtd-costcenter" fxLayoutAlign="end center" >
+              <span>Qty. Production: </span>
+              <div class="padding-right-costcenter"> 100.00</div>
+              <span>MVA:</span>
+              <div class="padding-right-costcenter">10</div>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </form>
+
+  <div  fxLayoutAlign="center center" >
+    <div fxFlex="90%">
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-description>
+          <div fxLayout="row" fxLayoutAlign="space-between center"   fxFlex="100%">
+            <div fxFlex="45" class="line-cost-center"  ></div>
+            <div fxFlex="10" align="center" class="size-cost-center" >TOTAL ( 111 )</div>
+            <div fxFlex="45" class="line-cost-center"></div>
+            <div class="title-size">TOTAL: R$ 16.000,00</div>
+          </div>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+        <mat-card class="positive" >
+          <div fxLayout="row" fxLayoutAlign="space-between center"   fxFlex="100%">
+            <div fxFlex="90"> All costcenter</div>
+            <div fxFlex="10">1000.00</div>
+          </div>
+        </mat-card>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-description>
+          <div fxLayout="row" fxLayoutAlign="space-between center"   fxFlex="100%">
+            <div fxFlex="45" class="line-cost-center"  ></div>
+            <div fxFlex="10" align="center" class="size-cost-center" >TOTAL ( 111 )</div>
+            <div fxFlex="45" class="line-cost-center"></div>
+            <div class="title-size">TOTAL: R$ 16.000,00</div>
+          </div>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-card class="positive" >
+        <div fxLayout="row" fxLayoutAlign="space-between center"   fxFlex="100%">
+          <div fxFlex="90"> All costcenter</div>
+          <div fxFlex="10">1000.00</div>
+        </div>
+      </mat-card>
+      <mat-card class="negative" >
+        <div fxLayout="row" fxLayoutAlign="space-between center"   fxFlex="100%">
+          <div fxFlex="90"> All costcenter</div>
+          <div fxFlex="10">1000.00</div>
+        </div>
+      </mat-card>
+
+    </mat-expansion-panel>
+  </mat-accordion>
+    </div>
+  </div>
+</div>

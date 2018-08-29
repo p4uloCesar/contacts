@@ -1,0 +1,28 @@
+.link-text{
+  font-size: 19px;
+  line-height: 2;
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.link-subtitle{
+  @extend .link-text;
+  outline: none;
+  cursor: pointer;
+}
+
+.arrow-navigation{
+  font-size: 17px;
+  font-style: normal;
+  padding-top: 20px;
+  color: #b9afaf;
+}
+
+.bread-crumb-span{
+  margin-left: 10px;
+  color: #00A8B2;
+}
+
+

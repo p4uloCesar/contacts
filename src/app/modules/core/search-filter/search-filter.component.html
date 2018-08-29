@@ -1,0 +1,7 @@
+<div class="button-seach">
+  <button mat-icon-button class="medium-search-bt" (click)="clicked($event)" type="submit">
+    <mat-icon class="material-icons">search</mat-icon>
+  </button>
+  <button mat-button color="primary" type="button" *ngIf="isClearSeach" (click)="clearFilter($event);">{{'BTN_CLEAR_FILTERS' | translate}}</button>
+</div>
+

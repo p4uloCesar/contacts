@@ -1,0 +1,44 @@
+<div class="app-component-viewer add-button">
+  <form #componentForm="ngForm" novalidate>
+    <div  fxLayoutAlign="center center">
+      <mat-card class="content-form container-field-button" fxFlex="90%">
+          <mat-card-title>Actual expense</mat-card-title>
+          <div class="content-field">
+            <div fxLayoutGap="20px"  fxLayout.xs="true" fxFlex="90%" fxLayoutAlign="start center">
+              <mat-form-field>
+                <input matInput [matDatepicker]="dp" placeholder="{{'date_file' | translate}}" [formControl]="date">
+                <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                <mat-datepicker #dp
+                                startView="multi-year"
+                                (yearSelected)="chosenYearHandler($event)"
+                                (monthSelected)="chosenMonthHandler($event, dp, $event)"
+                                panelClass="example-month-picker">
+                </mat-datepicker>
+              </mat-form-field>
+              <mat-form-field fxFlex="50%" >
+                <input placeholder="{{'LABEL_DESCRIPTION' | translate}}"
+                       [(ngModel)]="data_series.description"
+                       name="description"
+                       required
+                       matInput tabindex="2" autocomplete="off" maxlength="40">
+              </mat-form-field>
+
+              <div class="input-file-wrapper" fxLayout="row"  fxLayoutGap="50px" mat-dialog-content>
+                <input fxFlexFill="" #file (change)="fileChangePdf($event)" style="display: none"  accept=".xls, .xlsx, .csv"  type="file" id="myFileTypePdf" />
+                <!-- botão para o upload-->
+                <button onclick="document.getElementById('myFileTypePdf').click()"
+                        class="mat-button instruction-bt button-file"
+                        mat-button
+                        type="button">{{(!fileNameUpload ) ? ('select_file' | translate) :( fileNameUpload) }}<i class="material-icons">file_upload</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        <div class="content-field" fxLayoutAlign="end center">
+          <button mat-button color="primary" class="text-transform-form" [disabled]="!componentForm.valid" (click)="saveWithFile()" >{{'BTN_IMPORT' | translate}}</button>
+        </div>
+
+      </mat-card>
+    </div>
+  </form>
+</div>

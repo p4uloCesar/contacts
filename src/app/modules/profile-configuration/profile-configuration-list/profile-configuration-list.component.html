@@ -1,0 +1,72 @@
+<div class="app-component-viewer add-button">
+
+  <button class="medium-bt tf-bt-add " mat-fab color="primary" routerLink="../configuration/create">
+    <mat-icon class="material-icons mat-24">add</mat-icon>
+  </button>
+
+  <form #componentForm="ngForm" (ngSubmit)="search()" novalidate>
+    <div fxLayoutAlign="center center">
+      <mat-card class="mat-card-pesquisa" fxFlex="90%">
+        <div fxLayout="row" fxLayoutAlign="start start">
+          <div fxLayoutGap="20px" fxLayout.xs="column"  fxLayout.xm="column"  fxFlex="100%">
+            <mat-form-field fxFlex="37%" fxFlex.xs="40%">
+              <input matInput
+                     type="text"
+                     name="name"
+                     maxlength="30"
+                     (input)="changeFieldEvent(componentForm.value.name)"
+                     [(ngModel)]="descriptionFilter"
+                     placeholder="{{'PROFILE_SEARCH' | translate}}">
+            </mat-form-field>
+            <app-search-filter [isClearSeach]="isClearSeach" (clearFilterList)="clearFilter(componentForm)"></app-search-filter>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </form>
+
+  <div  fxLayoutAlign="center center">
+    <div class="table-container" fxFlex="90%">
+     <mat-table #table [dataSource]="dataSource" matSort >
+      <!-- code Column -->
+        <ng-container matColumnDef="description">
+          <mat-header-cell *matHeaderCellDef  mat-sort-header (click)="ngAfterViewInit()">{{'LABEL_DESCRIPTION' | translate}}</mat-header-cell>
+          <mat-cell *matCellDef="let element" > {{element.name}} </mat-cell>
+        </ng-container>
+        <!-- description Column -->
+
+        <!-- mais Column -->
+        <ng-container matColumnDef="settings">
+          <mat-header-cell *matHeaderCellDef fxFlex="10%"></mat-header-cell>
+          <mat-cell *matCellDef="let element" fxFlex="10%" align="right">
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item routerLink="../configuration/{{element.id}}">
+                <span>{{'LABEL_EDIT' | translate}}</span>
+              </button>
+              <button mat-menu-item [disabled]="element.profile_obj==null || element.profile_obj.editable == false"  (click)="delete(element)" class="menu-right-work">
+
+                <span>{{'label-delete' | translate}}</span>
+              </button>
+            </mat-menu>
+          </mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="['description','settings'];"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: ['description','settings'];" ></mat-row>
+      </mat-table>
+        <div class="mat-paginator not-register" *ngIf="(paginator.length==0)">
+          <mat-spinner class="mat-spinner-list" *ngIf="isSpinner"></mat-spinner>
+          <span *ngIf="!isSpinner">{{'MSG_WARNING_REGISTER' | translate}}</span>
+        </div>
+        <mat-paginator #paginator [hidden]="paginator.length==0 || paginator.length<=paginator.pageSize  "
+                     [length]="paginator.length"
+                     [pageIndex]="paginator.pageIndex"
+                     [pageSize]="paginator.pageSize"
+                     [pageSizeOptions]="paginator.pageSizeOptions"
+                     (page)="pageEvent = $event; retrieveList()">
+      </mat-paginator>
+      </div>
+  </div>
+</div>

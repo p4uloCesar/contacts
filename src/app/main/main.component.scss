@@ -1,0 +1,241 @@
+@import '../../scss/style-paths/variables';
+
+.sub-header{
+  .sub-header-display{
+    position: relative;
+    padding-left: 54px;
+    display: flex;
+  }
+  .material-cons-hide{
+    display: none;
+  }
+  .material-cons-show{
+    display: inline-block;
+    z-index: 1;
+  }
+  .material-cons-show-back{
+    height: 38px;
+    padding-left: 44px;
+  }
+  .material-icons{
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    padding: 0 px;
+    cursor: pointer;
+  }
+  .pandding-sub-header{
+    padding-left: 15px;
+  }
+}
+
+/* Header */
+
+.header {
+  background-color: $header-background-color;
+  color: $header-color;
+  box-shadow: $header-box-shodow;
+  position: relative;
+  z-index: 10;
+  border-bottom: $header-border-button;
+}
+
+.header-menu-nav{
+  line-height: 2.8px;
+}
+
+
+
+.brand {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.brand-button {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.mat-button {
+  font-weight: 300;
+}
+
+/* Logo */
+
+.brand-logo {
+  margin: 0 4px 3px 0;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+.st0{fill:#606161;}
+
+.brand-logo.default{
+  width: 97%;
+  height: 70px;
+
+}
+.brand-large{
+  width: 332px;
+  text-align: center;
+  height: 62px;
+  margin-left: -18px;
+  background-image: $header-logo;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-color: $header-logo-topo;
+}
+
+.brand-logo.minimized{
+  width: 23px;
+  height: 42px;
+  background-image: $header-logo-minized;
+}
+
+.logotype:after {
+  color: #ffffff;
+  content: "";
+  display: inline-block;
+}
+
+.user {
+  float: right;
+}
+
+.user.name {
+  font-size: 12px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.page-title {
+  text-align: left;
+  color: $color-primary;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  vertical-align: middle;
+}
+
+.user.button{
+  min-width: 58px;
+}
+
+.notification{
+  color: #10AFE5;
+  padding: 0;
+  float: right;
+  min-width: 50px
+}
+
+.notification-task{
+  color: #E45D4C ;
+  padding: 0;
+  float: right;
+  min-width: 50px
+}
+
+.count-suggestion{
+  float: right;
+  margin-top: -10px;
+  width: 10px;
+  height: 28px;
+  position: relative;
+  left: -12px;
+}
+.sub-header {
+  position: relative;
+  box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+  background-color: #ffffff;
+}
+
+.title-card-header {
+  font-weight: 400 !important;
+}
+
+.title-sub-header {
+  font-weight: 300 !important;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.sidenav {
+  @include menuLateral();
+  h3 {
+    opacity: 0.8;
+    color: #E4E4E4;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 41px;
+
+    &:first-child {
+      margin-top: 20px;
+    }
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      & > a {
+        color: #ffffff;
+        box-sizing: border-box;
+        display: block;
+        font-size: 14px;
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-weight: 400;
+        line-height: 38px;
+        text-decoration: none;
+        transition: all .3s;
+        padding: 0 41px;
+        position: relative;
+        outline: none;
+
+        &.active, &:hover {
+          background: rgba(249, 252, 249, 0.41);
+          color: #f5f4f4;
+        }
+        &.active{
+          border-left: 5px solid;
+          padding-left: 35px;
+        }
+
+      }
+    }
+  }
+
+  .material-icons menu {
+    vertical-align: middle;
+    margin-right: 12px;
+    font-size: 55px;
+  }
+}
+
+.app-component-sidenav {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mat-sidenav-container {
+  width: 100%;
+  position: relative;
+  transform: translate3d(0,0,0);
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+  overflow: hidden;
+}

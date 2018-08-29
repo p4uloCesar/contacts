@@ -1,0 +1,43 @@
+<form #componentForm="ngForm" novalidate>
+  <div fxLayout="column">
+
+    <h1 fxFlex="100%"  mat-dialog-title>{{'import_file' | translate}}</h1>
+
+    <div fxLayout="row" fxLayoutGap="10px" mat-dialog-content>
+
+      <mat-form-field fxFlex="30%">
+        <input matInput [matDatepicker]="dp" placeholder="{{'date_file' | translate}}" [formControl]="date">
+        <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+        <mat-datepicker #dp
+                        startView="multi-year"
+                        (yearSelected)="chosenYearHandler($event)"
+                        (monthSelected)="chosenMonthHandler($event, dp, $event)"
+                        panelClass="example-month-picker">
+        </mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field fxFlex="70%">
+        <input placeholder="{{'LABEL_DESCRIPTION' | translate}}"
+               [(ngModel)]="data.description"
+               name="description"
+               required
+               matInput tabindex="2" autocomplete="off" maxlength="40">
+      </mat-form-field>
+    </div>
+    <div class="input-file-wrapper" fxLayout="row"  fxLayoutGap="50px" mat-dialog-content>
+      <input fxFlexFill="" #file (change)="fileChangePdf($event)" style="display: none"  accept=".xls, .xlsx, .csv"  type="file" id="myFileTypePdf" />
+      <!-- botão para o upload-->
+      <button onclick="document.getElementById('myFileTypePdf').click()"
+              class="mat-button instruction-bt button-file"
+              mat-button
+              type="button">
+        {{(!fileNameUpload ) ? ('select_file' | translate) :( fileNameUpload) }}
+        <i class="material-icons">file_upload</i>
+      </button>
+    </div>
+    <div fxFlex="100%" fxLayout="row-reverse" mat-dialog-actions>
+      <button fxFlex="15%" class="text-transform-form" [disabled]="!componentForm.valid" (click)="saveWithFile()" mat-button tabindex="3">{{'BTN_IMPORT' | translate}}</button>
+      <button fxFlex="15%" class="text-transform-form" (click)="closeDialog()" mat-button tabindex="4">{{'label-bt-cancel' | translate}}</button>
+    </div>
+  </div>
+</form>

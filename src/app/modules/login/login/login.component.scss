@@ -1,0 +1,207 @@
+@import '../../../../scss/style-paths/variables';
+
+.bg-login {
+  background-image: url('/assets/images/bg-login.png');
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  justify-content: center;
+  background-color:$background-login;
+}
+.login-card {
+  width: 380px;
+  margin: 1em auto;
+  padding: 3em 2em 2em 2em;
+  border-radius: 10px;
+  min-height: 40%;
+  span{
+    i{
+      opacity: 0.3;
+    }
+  }
+}
+.container-button-login{
+  justify-content: flex-end;
+  button{
+    border-radius: 5px
+  }
+}
+.label-login-guest{
+  color: $color-system;
+}
+.label-login-guest:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.container-login {
+  width: 95%;
+  margin-bottom: 10px;
+}
+.welcome {
+  font-size: 28px;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 3em 0 .75em 0;
+}
+input {
+  font-size: 18px;
+}
+.group {
+  position: relative;
+}
+.group-margin{
+  margin-bottom: 70px;
+}
+
+.sub-title-logo{
+  height: 24px;
+  width: 296px;
+  color: #8B8F9B;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.icon-login-password{
+  position: absolute;
+  color:#8B8F9B;
+}
+
+.input{
+  .mat-form-field-placeholder-wrapper{
+    text-indent: 20px;
+  }
+}
+
+.button-login-biometrics{
+  justify-content: center;
+  button{
+    border-radius: 5px
+  }
+ }
+.bt-login-with-biometry{
+  position: relative;
+  display: flex;
+  padding: 16px 32px;
+  margin: 20px 0;
+  width: 100%;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  letter-spacing: 1px;
+  background: #0A4D9E;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+/* Button */
+.bt-login {
+  position: relative;
+  display: flex;
+  padding: 16px 32px;
+  margin: 20px 0;
+  width: 100%;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: center;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  background: #000;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.bt-login:focus { outline: 0; }
+/* Button modifiers */
+.brand {
+  display: inline-block;
+  position: relative;
+  width: 230px;
+  height: 46px;
+  background-repeat: no-repeat;
+}
+.logo-denso-login,
+.logo-fpf-login {
+  display: inline-block;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.logo-login {
+  height: 72px;
+  margin: 0 4px 3px 0;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-image: $img-logo;
+  width: $header-logo-width;
+
+}
+.logo-fpf-login {
+  width: 135px;
+  height: 46px;
+  margin-left: 30px;
+
+}
+
+.version{
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.fingerprint-bt{
+  border-radius: 50%;
+
+  min-height: 60px;
+  min-width: 60px;
+  width: 60px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  text-align: -webkit-center;
+}
+
+.fingerprint{
+  color: #ffffff;
+  font-size: 38px;
+  vertical-align: top;
+}
+
+.fingerprint-label{
+  color: rgba(0,0,0,0.54);
+}
+
+.logo-fpf{
+  background-image: url('/assets/images/logo_fpf.png');
+  height: 44px;
+  width: 140px;
+  background-repeat: no-repeat;
+  bottom: 22px;
+  margin: 21px 60px;
+  right: 0;
+  position: absolute;
+}
+
+.logo-empresa{
+  background-image: url('/assets/images/logo_empresa.png');
+  height: 41px;
+  width: 226px;
+  background-repeat: no-repeat;
+  bottom: 22px;
+  margin: 44px 60px;
+}
+
+.footer-logo{
+  position: absolute; bottom: 5%;  width: 100%
+}

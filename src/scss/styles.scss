@@ -1,0 +1,535 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'style-paths/variables';
+// @import '../scss/components/quill.snow.css';
+
+/* Material Icons */
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url(../assets/icons/MaterialIcons-Regular.woff2) format('woff2'),
+  url(../assets/icons/MaterialIcons-Regular.woff) format('woff'),
+  url(../assets/icons/MaterialIcons-Regular.ttf) format('truetype'),
+  url(../assets/icons/MaterialIcons-Regular.svg) format('svg');
+}
+
+@font-face {
+  font-family: 'robotobold';
+  src: url('../assets/fonts/roboto-bold-webfont.eot');
+  src: url('../assets/fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
+  url('../assets/fonts/roboto-bold-webfont.woff') format('woff'),
+  url('../assets/fonts/roboto-bold-webfont.ttf') format('truetype'),
+  url('../assets/fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotolight';
+  src: url('../assets/fonts/roboto-light-webfont.eot');
+  src: url('../assets/fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/roboto-light-webfont.woff2') format('woff2'),
+  url('../assets/fonts/roboto-light-webfont.woff') format('woff'),
+  url('../assets/fonts/roboto-light-webfont.ttf') format('truetype'),
+  url('../assets/fonts/roboto-light-webfont.svg#robotolight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotomedium';
+  src: url('../assets/fonts/roboto-medium-webfont.eot');
+  src: url('../assets/fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/roboto-medium-webfont.woff2') format('woff2'),
+  url('../assets/fonts/roboto-medium-webfont.woff') format('woff'),
+  url('../assets/fonts/roboto-medium-webfont.ttf') format('truetype'),
+  url('../assets/fonts/roboto-medium-webfont.svg#robotomedium') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../assets/fonts/roboto-regular-webfont.eot');
+  src: url('../assets/fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('../assets/fonts/roboto-regular-webfont.woff2') format('woff2');
+  src: url('../assets/fonts/roboto-regular-webfont.woff') format('woff');
+  src: url('../assets/fonts/roboto-regular-webfont.ttf') format('truetype');
+  src: url('../assets/fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+//icons default
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  cursor: pointer;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+
+}
+
+/*Styles to icon size by Angular Material Icons Doc*/
+.material-icons.mat-18 { font-size: 18px; height: 18px; width: 18px; }
+.material-icons.mat-24 { font-size: 24px; height: 24px; width: 24px; }
+.material-icons.mat-menu { font-size: 30px; height: 30px; width: 30px; }
+.material-icons.mat-36 { font-size: 36px; height: 36px; width: 36px; }
+.material-icons.mat-48 { font-size: 48px; height: 48px; width: 48px; }
+
+
+html, body, main, mat-sidenav-container {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'robotoregular', sans-serif;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.medium-bt{
+  width: 70px !important;
+  height: 70px !important;
+  min-width: 70px;
+}
+
+.mat-drawer-container {
+  background-color: #F2F2F2 !important;
+}
+
+.mat-drawer-backdrop.mat-drawer-shown {
+  background-color: transparent;
+}
+
+.mat-button.form-bt {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+  height: 46px;
+  width: 150px;
+}
+
+
+.mat-button.btn-table{
+  min-width: 10px;
+  min-height: 10px;
+  width: 10px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+
+.mat-button.btn-table.add{
+  color: #ffffff;
+}
+
+.material-icons.btn-icon{
+  text-align: left;
+  margin-left: -11px;
+  padding: 0;
+}
+
+.app-component-sidenav {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mat-sidenav-container {
+  width: 100%;
+  position: relative;
+  transform: translate3d(0,0,0);
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+  overflow: hidden;
+}
+
+.app-component-viewer {
+  font-family: Roboto, sans-serif;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.app-component-viewer.add-button {
+  padding: 40px 20px;
+}
+
+.app-component-viewer.performance-panel {
+  padding: 0 0 0 0;
+  min-height: 92%;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.11), 0 0 2px rgba(0, 0, 0, 0.12);
+}
+
+
+.table-hide {
+  display: none!important;
+}
+
+.no-top-border-radius {
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+
+.button-container {
+  padding-top: 20px;
+}
+
+.gp-bt-sidenav {
+  margin: 0 15px 0 0 !important;
+  min-width: 1% !important;
+  width: 44px;
+  padding: 0 !important;
+}
+
+.mat-header-cell {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.tf-bt-add{
+  top: 35px !important;
+  right: 35px !important;
+  position: absolute !important;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.12), 0 6px 6px 0 rgba(0,0,0,0.24), 0 0 12px 0 rgba(0,0,0,0.12), 0 12px 12px 0 rgba(0,0,0,0.24);
+}
+
+mat-header-cell,
+mat-cell {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 15px;
+}
+
+mat-cell:last-child {
+  padding-right: 0;
+}
+
+mat-row {
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
+}
+mat-row:hover,
+mat-row:nth-child(odd):hover {
+  background-color: #E3F2FD;
+}
+
+mat-card-header {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+  border-bottom: 1px solid #e3e3e3;
+}
+
+mat-tab-group mat-card{
+  margin-top: 10px;
+}
+
+mat-chip-list {
+  padding: 0 10px;
+}
+
+mat-chip-list .txt {
+  margin: 7px 5px 0 0;
+  color: rgba(0,0,0,.54);
+}
+
+mat-chip {
+  padding: 2px 0 2px 12px;
+  margin-bottom: 5px;
+  background-color: #e3e7f0 !important;
+}
+
+mat-chip strong {
+  margin-right: 5px;
+}
+
+mat-chip .gp-bt-close-chip {
+  top: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 5px
+}
+
+mat-chip .gp-bt-close-chip mat-icon {
+  line-height: 18px !important;
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+}
+
+.mat-table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.mat-table thead .mat-row,
+.mat-table tbody .mat-row {
+  border-bottom: 1px solid #e3e3e3;
+}
+.mat-table tbody .mat-row:last-child {
+  border-bottom: 0;
+}
+.mat-table th, .mat-table td {
+  padding: 0 24px;
+}
+
+.mat-menu-content {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.mat-menu-item {
+  color: #333333;
+  font-size: 14px;
+
+  &:hover, &.active {
+    color: #000000;
+    background-color: #eeeeee !important;
+  }
+}
+
+//
+//.mat-subheader {
+//  padding: 0 !important;
+//}
+//
+//.mat-list .mat-list-item .mat-list-item-content {
+//  height: 38px !important;
+//}
+
+.mat-dialog-content {
+  margin-bottom: 15px !important;
+}
+
+
+.label-required{
+  margin-top: 20px;
+  color: #E97979;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  /*border-radius: 10px;*/
+}
+
+.mat-form-field-disabled .mat-form-field-underline{
+  background-image: (rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
+}
+
+.truncate-text{
+  display: block !important;
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis !important;
+}
+.content-form{
+  padding: 0 !important;
+  border-radius: 4px;
+  mat-card-title {
+    font-size: 22px;
+    padding-left: 35px;
+    line-height: 3.0;
+    font-weight: 500;
+  }
+}
+
+.content-field{
+  margin: 0 30px 20px !important;
+}
+
+.container-field-button {
+  margin-bottom: 24px;
+}
+
+
+.upcase-container-layout{
+  input{
+    text-transform: uppercase;;
+  }
+}
+
+.footer {
+  height:75px; // Replace with the height your footer should be
+  width: 100%; // Don't change
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 3px 1px -3px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+//
+.container-card-list{
+  padding: 30px 90px 60px 90px;
+
+  color: gray;
+  table{
+    border-collapse: collapse;
+    tbody{
+      tr:hover{
+        td{
+          color: #000;
+        }
+      }
+    }
+    .example-header{
+      font-size: 21px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.button-seach{
+  margin-top: 10px;
+}
+
+
+.not-register{
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  font-weight: 500;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.54)
+}
+
+.mat-card-pesquisa{
+  box-shadow: none !important;
+  background: none;
+  padding-left: 10px !important;
+
+}
+.fxField{
+  margin-right: 20px;
+}
+
+.footer-button{
+  padding: 0 94px;
+  .mat-button{
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+  }
+  .mat-button:disabled{
+    opacity: 0.6;
+  }
+}
+
+.mat-spinner-list{
+  width: 30px !important;
+  height: 30px !important;
+  margin: auto;
+  svg{
+    width: 30px !important;
+    height: 30px !important;
+
+  }
+}
+
+
+.mat-dialog-actions {
+
+  color: #009688 !important;
+
+  .mat-button{
+    font-weight: bold !important;
+  }
+}
+
+.textBold{
+  font-weight: bold !important;
+}
+
+.table-list{
+  mat-row, mat-header-row, mat-header-cell, mat-header-cell, mat-cell {
+    padding: 0 10px;
+  }
+}
+.sub-header-top {
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin-top: -80px;
+  margin-left: 80px;
+}
+
+.mat-list-heght-none{
+  height: auto;
+}
+
+.text-transform-form{
+  text-transform: uppercase;
+  font-size: 16px;
+}
+

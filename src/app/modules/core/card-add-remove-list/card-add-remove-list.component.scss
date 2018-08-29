@@ -1,0 +1,124 @@
+.mat-table {
+    display: table;
+    width: 100%;
+
+    .mat-row {
+        display: table-row;
+        padding: 1px;
+     .mat-cell {
+            display: table-cell;
+            height: 48px;
+            vertical-align: middle;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+            width: 50%;
+        }
+    }
+}
+
+.card-add-remove-row{
+  tbody > tr, thead > tr {
+    display: table;
+    width: 100%;
+  }
+}
+
+.bt-list-model{
+  text-align: right !important;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.results-section {
+  .text-danger {
+    color: #FF5A5A;
+  }
+
+}
+
+  .scrollable-table {
+  .table-container{
+    box-shadow: none;
+  }
+  padding: 4px;
+  margin-bottom: 20px;
+  table {
+    border-spacing: 0;
+    width: 100%;
+    text-align: left;
+    box-shadow: none;
+  }
+  thead {    width: 100%;}
+  tbody > tr, thead > tr {
+    display: table;
+    width: 100%;
+  }
+  tbody{
+
+    tr{
+      border-bottom: 2px solid #f2f2f2
+    }
+  }
+  tbody, thead {
+    display: inline-block;
+  }
+  tbody {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100px;
+    width: 100%;
+  }
+  th, td{
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+  }
+  .td-align-right{
+    text-align: right !important;
+  }
+    .height-tbody{
+      max-height: 350px !important;
+    }
+    .td-overflow{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis !important;;
+    }
+}
+
+.scrollable-table-list {
+  .table-container{
+    box-shadow: none;
+  }
+  padding: 4px;
+  margin-bottom: 20px;
+  table {
+    border-spacing: 0;
+    width: 100%;
+    text-align: left;
+    box-shadow: none;
+  }
+  thead {}
+  tbody > tr, thead > tr {
+    display: table;
+    width: 100%;
+  }
+  tbody{
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 300px;
+    width: 100%;
+    tr{
+      border-bottom: 2px solid #f2f2f2
+    }
+  }
+  tbody, thead {
+    display: contents;
+  }
+  tbody {}
+  th, td{}
+  .td-align-right{
+    text-align: right !important;
+  }
+
+
+}

@@ -1,0 +1,33 @@
+<div fxLayout="column" fxFlex="100%" fxLayout.xs="column" fxLayoutGap="20px" >
+
+  <div fxFlex="100%" *ngIf="!disabled">
+    <mat-form-field class="chip-autocomplete-display" fxFlex="90%">
+      <input matInput [matChipInputFor]="chipList"
+             [matChipInputAddOnBlur]="false"
+             (matChipInputTokenEnd)="addNew($event)"
+             [matAutocomplete]="auto"
+             fxFlex="100%"
+             maxlength="104"
+             [(ngModel)]="descriptionItem"
+             (input)="onKeyUp($event.target.value)"
+             #chipInput>
+    </mat-form-field>
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn" (optionSelected)="add($event)">
+      <mat-option *ngFor="let tag of itemsFiltered()" [value]="tag">
+        <span>{{ tag.description }}</span>
+      </mat-option>
+    </mat-autocomplete>
+    <div class="add-button" fxFlex="10%">
+      <button fxLayoutAlign="start start" type="button" class="mat-button btn-table add" (click)="addNew($event)" mat-button>
+        <i fxLayoutAlign="center" class="material-icons btn-icon">add</i>
+      </button>
+    </div>
+  </div>
+  <mat-chip-list #chipList >
+    <mat-chip disabled="true" *ngFor="let tag of items"  (remove)="remove(tag)" class="mat-chip-component">
+      {{tag.description}} <mat-icon matChipRemove *ngIf="!disabled">clear</mat-icon>
+    </mat-chip>
+  </mat-chip-list>
+</div>
+
+

@@ -1,0 +1,12 @@
+[
+  {"position": 1, "month_year": "Hydrogen", "file_name": 1.0079,  "file_text": "H"},
+  {"position": 2, "month_year": "Helium",   "file_name": 4.0026,  "file_text": "He"},
+  {"position": 3, "month_year": "Lithium",  "file_name": 6.941,   "file_text": "Li"},
+  {"position": 4, "month_year": "Beryllium","file_name": 9.0122,  "file_text": "Be"},
+  {"position": 5, "month_year": "Boron",    "file_name": 10.811,  "file_text": "B"},
+  {"position": 6, "month_year": "Carbon",   "file_name": 12.0107, "file_text": "C"},
+  {"position": 7, "month_year": "Nitrogen", "file_name": 14.0067, "file_text": "N"},
+  {"position": 8, "month_year": "Oxygen",   "file_name": 15.9994, "file_text": "O"},
+  {"position": 9, "month_year": "Fluorine", "file_name": 18.9984, "file_text": "F"},
+  {"position": 10,"month_year": "Neon",     "file_name": 20.1797, "file_text": "Ne"}
+]

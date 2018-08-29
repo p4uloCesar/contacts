@@ -1,0 +1,11 @@
+<div class="footer">
+  <div fxLayout="row" class="footer-button button-row" fxLayoutAlign="end">
+    <div class="footer-margin">
+      <button class="mat-button form-bt " mat-raised-button color="accent" fxFlexOrder="1" type="button" routerLink="{{urlCancel}}">{{'BTN_CANCEL'| translate}}</button>
+    </div>
+    <div>
+      <ng-content></ng-content>
+      <button class="mat-button form-bt " mat-raised-button color="primary" fxFlexOrder="2" [disabled]="requeridForm"  (click)="clicado($event)"  type="submit"  >{{'BTN_SAVE'| translate}}</button>
+    </div>
+  </div>
+</div>

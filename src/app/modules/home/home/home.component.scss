@@ -1,0 +1,43 @@
+.home-logo-background{
+  background-image: url('../../../../assets/images/logo/logo_menu.png')
+}
+
+
+.home-logo{
+  margin: 50px 100px;
+  background-color: white;
+  mat-card{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 24px;
+    .home-logo-app{
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      height: 64px;
+      margin: 34px 0;
+      background-size: 62%;
+      justify-content: center;
+      display: flex;
+      align-content: center;
+      width: 100%;
+    }
+    .home-text{
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  }
+}
+
+.home-select-workstation{
+  width: 60%;
+}
+
+.title-card-workstation-history{
+  color: #797979;
+  font-size: 18px;
+  text-align: left;
+}
+
+.button-color{
+  background-color: #8BC34A;
+}

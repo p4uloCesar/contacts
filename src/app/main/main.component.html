@@ -1,0 +1,67 @@
+ <div class="content">
+  <header>
+    <mat-toolbar class="header">
+      <div class="brand" fxLayout="row">
+        <div class="brand-large" [hidden]="showLogoMinimized" style="background-color: #00A8B2">
+          <a aria-label="MMS" class="brand-button" tabindex="0" href="/" >
+            <div class="brand-logo default" ></div>
+          </a>
+        </div>
+        <div [hidden]="!showLogoMinimized">
+          <div class="brand-logo minimized"></div>
+          <span class="logotype"></span>
+        </div>
+        <div class="row" fxLayoutAlign="center center">
+          <button class="sidenav-toggle mat-button gp-bt-sidenav" type="button" mat-button
+                  (click)="openSidenav(sidenav);">
+            <i class="material-icons mat-menu">menu</i>
+          </button>
+        </div>
+        <div fxLayoutAlign="center center">
+          <span class="page-title">{{title | uppercase}}</span>
+        </div>
+      </div>
+
+      <a class="user mat-button user name" mat-button="">
+        <span>{{'label-generic-hello' | translate}} {{getUserName()}}</span>
+      </a>
+      <button class="user button mat-button" mat-button="">
+        <i class="material-icons">account_circle</i>
+      </button>
+
+      <button class="user button mat-button" (click)="logOut()" mat-button="">
+        <i class="material-icons" >power_settings_new</i>
+      </button>
+    </mat-toolbar>
+  </header>
+
+  <simple-notifications [options]="toast.options"></simple-notifications>
+  <mat-sidenav-container (click)="showLogoMinimized || openSidenav(sidenav);">
+    <mat-sidenav #sidenav class="sidenav" opened="true" mode="push" (close)="openSidenav(sidenav, true)" >
+      <div style="margin: 0px" *ngFor="let menuGroup of  menuGroup">
+      <h3>{{menuGroup.groupName | translate}}</h3>
+      <ul *ngFor="let menuItem of  menuGroup.menuItem">
+        <li >
+          <a  class="link" (click)="sidenav.close(); changeTitle(menuGroup.groupName );" [routerLink]="['/'+menuItem.path]" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: false}">
+            {{menuItem.title| translate}}
+          </a>
+        </li>
+
+
+      </ul>
+
+      </div>
+    </mat-sidenav>
+    <main>
+      <mat-toolbar class="sub-header">
+        <div class="material-cons-show-back">
+          <i class="material-icons" (click)="backClicked()" [ngClass]="{'material-cons-show':showRouter,'material-cons-hide':!showRouter}" >keyboard_arrow_left</i>
+        </div>
+          <div class="sub-header-display" [ngClass]="{'pandding-sub-header':showRouter}">
+            <h1 class="title-sub-header">{{subTitle | translate}}</h1>
+          </div>
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-container>
+</div>

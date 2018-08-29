@@ -1,0 +1,31 @@
+<div class="content bg-login">
+  <form action="">
+    <mat-card style="text-align: center;" class="login-card">
+      <div class="logo-login"></div>
+      <div class="group-margin"><span class="sub-title-logo">Manufactoring Management System</span></div>
+      <mat-form-field class="container-login">
+        <span matPrefix> <i class="material-icons">account_circle</i>&nbsp;</span>
+        <input fxFlex="90%"  (focus)="verifyIsLoged()"  matInput placeholder="User" [(ngModel)]="userLogin.username"
+               type="text" name="username">
+      </mat-form-field>
+      <mat-form-field class="container-login">
+        <span matPrefix> <i class="material-icons">lock</i>&nbsp;</span>
+        <input fxFlex="90%" matInput placeholder="Password" [(ngModel)]="userLogin.password"
+               type="password" name="password">
+      </mat-form-field>
+    </mat-card>
+    <div fxLayout="row" fxLayoutAlign="center" class="button-login-biometrics">
+      <button  fxFlex="25%" mat-button class="bt-login" (click)="login()">Login</button>
+    </div>
+  </form>
+
+</div>
+
+<div class="footer-logo" fxLayout="row" fxFlex>
+  <div class="logo-empresa"></div>
+  <div class="logo-fpf"> </div>
+</div>
+
+
+<div class="version">Version 20180117</div>
+<simple-notifications [options]="toast.options"></simple-notifications>

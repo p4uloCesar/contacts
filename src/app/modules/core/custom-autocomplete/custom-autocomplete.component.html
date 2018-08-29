@@ -1,0 +1,17 @@
+<mat-form-field  class="autocomple-employee" fxFlex="1 1 100%" >
+  <input id="employee" style="width: 450px;"
+         name="employee"
+         type="text"
+         [ngModel]="valueText"
+         [formControl]="formControl"
+         matInput [placeholder]="placeholder"
+         [matAutocomplete]="auto"
+         [required]="required"
+         (keyup)="search($event)">
+</mat-form-field>
+<mat-autocomplete #auto="matAutocomplete">
+  <mat-option *ngFor="let item of list"  [value]="item.name ? item.name : item.description" (onSelectionChange)="change(item)">
+    <span >{{ item.name ? item.name : item.description}}</span>
+  </mat-option>
+</mat-autocomplete>
+

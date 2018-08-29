@@ -1,0 +1,77 @@
+<div class="app-component-viewer add-button">
+  <button class="medium-bt tf-bt-add " mat-fab color="primary" routerLink="/employee/create">
+    <mat-icon class="material-icons mat-24">add</mat-icon>
+  </button>
+  <form #componentForm="ngForm" (ngSubmit)="search()" novalidate>
+    <div fxLayoutAlign="center center">
+       <mat-card class="mat-card-pesquisa" fxFlex="90%">
+        <div fxLayout="row"  fxLayoutAlign="start start">
+          <div fxLayoutGap="20px" fxFlex="60%">
+            <mat-form-field fxFlex="">
+              <input matInput
+                     type="text"
+                     id="description_filter"
+                     name="description_filter"
+                     (input)="changeFieldEvent(componentForm.value.descriptionFilter)"
+                     maxlength="30"
+                     [(ngModel)]="descriptionFilter"
+                     placeholder="{{'EMPLOYEE_SEARCH' | translate}}">
+            </mat-form-field>
+          </div>
+          <app-search-filter [isClearSeach]="isClearSeach" (clearFilterList)="clearFilter(componentForm)"></app-search-filter>
+        </div>
+      </mat-card>
+    </div>
+  </form>
+
+  <div  fxLayoutAlign="center center" >
+    <div class="table-container" fxFlex="90%">
+      <mat-table #table [dataSource]="dataSource" >
+        <!-- code Column -->
+        <ng-container matColumnDef="employee">
+          <mat-header-cell *matHeaderCellDef fxFlex="40%"  >{{'EMPLOYEE_TITLE' | translate}}</mat-header-cell>
+          <mat-cell *matCellDef="let element" fxFlex="40%">{{element.name}} </mat-cell>
+        </ng-container>
+
+
+        <!-- situation group -->
+        <ng-container matColumnDef="group">
+          <mat-header-cell *matHeaderCellDef fxFlex="50%" align="center"> {{'PROFILE_TITLE' | translate}} </mat-header-cell>
+          <mat-cell *matCellDef="let element" fxFlex="50%" align="center">
+            <div *ngIf="(element.user_obj)" >
+                <span  *ngFor="let group of element.user_obj.group_list" >{{group.name}}
+                </span>
+            </div>
+          </mat-cell>
+        </ng-container>
+
+
+        <!-- mais Column -->
+        <ng-container matColumnDef="settings">
+          <mat-header-cell *matHeaderCellDef  fxFlex="1 1 10%"></mat-header-cell>
+          <mat-cell *matCellDef="let element"  fxFlex="1 1 10%" align="right">
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item routerLink="../employee/{{element.id}}">
+                <span>{{'LABEL_EDIT' | translate}} </span>
+              </button>
+            </mat-menu>
+          </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="['employee', 'group', 'settings'];"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: ['employee', 'group', 'settings'];" ></mat-row>
+      </mat-table>
+      <div class="mat-paginator not-register" [hidden]="paginator.length>0">{{'MSG_WARNING_REGISTER' | translate}}</div>
+      <mat-paginator #paginator [hidden]="paginator.length==0"
+                       [length]="paginator.length"
+                       [pageIndex]="paginator.pageIndex"
+                       [pageSize]="paginator.pageSize"
+                       [pageSizeOptions]="paginator.pageSizeOptions"
+                       (page)="pageEvent = $event; retrieveList()">
+        </mat-paginator>
+    </div>
+  </div>
+</div>

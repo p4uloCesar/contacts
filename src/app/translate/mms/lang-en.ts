@@ -1,0 +1,17 @@
+export const LANG_EN_NAME_SPECIFIC = 'en';
+
+export const LANG_EN_TRANS_SPECIFIC = {
+
+  'ELABORATION'  : 'DRAFT',
+  'APPROVAL': 'IN APPROVAL',
+  'HOMOLOGATION' : 'IN HOMOLOGATION' ,
+  'FINALIZED' : 'HOMOLOGATED' ,
+  'CANCELED' : 'CANCELED',
+  'INVALIDING' : 'IN INVALIDATION' ,
+  'OBSOLETE' : 'OBSOLETE',
+  'DISAPPROVED': 'DISAPPROVED',
+  'REVIEW' : 'REVIEW',
+  'REVIEWING' : 'REVIEWING',
+  'obsolte_documents' : 'Obsolete Documents',
+
+};

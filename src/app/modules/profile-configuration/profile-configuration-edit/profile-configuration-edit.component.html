@@ -1,0 +1,47 @@
+<div class="app-component-viewer add-button">
+
+  <form  #componentForm="ngForm" (ngSubmit)="!componentForm.valid || saveAllPermissions(componentForm)" novalidate>
+    <div class="container-card-list">
+      <mat-card fxLayout="column" >
+        <mat-form-field  id="description-permissions" *ngIf="group" fxFlex="90%" >
+          <input fxFlex="100%"  placeholder="{{'PROFILE_DESCRIPTION' | translate}}"
+                   name="name"
+                 [(ngModel)]="group.name"
+                 autocomplete="off"
+                 [readonly]="group.profile_obj && !group.profile_obj.editable"
+                 matInput tabindex="1">
+        </mat-form-field>
+        <div fxLayout="row" >
+          <div fxFlex="50%" class="textBold" fxLayoutAlign="center center">{{'PROFILE_PERMISSION' | translate}}</div>
+          <div fxFlex="50%" class="textBold" fxLayoutAlign="center center">{{'PROFILE_ALLOCATED' | translate}}</div>
+        </div>
+        <div class="row">
+
+          <div fxFlex class="list-permissions" fxLayout="column" >
+            <mat-card>
+            <mat-selection-list style="height: 500px; overflow: auto;" #shoes>
+              <mat-list-option (click)="selectedPermission(permission)" *ngFor="let permission of avaiablePermissions">
+                {{permission.codename | translate}}
+              </mat-list-option>
+            </mat-selection-list>
+            </mat-card>
+          </div>
+          <div fxLayout="column" fxLayoutAlign="center center">
+            <mat-icon class="material-icons" (click)="addAll()">keyboard_arrow_right</mat-icon>
+            <mat-icon class="material-icons" (click)="removeAll()">keyboard_arrow_left</mat-icon>
+          </div>
+          <div fxFlex class="list-permissions" fxLayout="column" >
+            <mat-card>
+            <mat-selection-list style="height: 500px; overflow: auto;" #shoes>
+              <mat-list-option (click)="unselectedPermission(permission)"  *ngFor="let permission of group.permission_list">
+                {{permission.codename | translate}}
+              </mat-list-option>
+            </mat-selection-list>
+            </mat-card>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <app-footer-basic [requeridForm]="false" [urlCancel]="'/modules/configuration'"></app-footer-basic>
+  </form>
+</div>

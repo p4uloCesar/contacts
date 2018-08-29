@@ -1,0 +1,55 @@
+<div class="app-component-viewer add-button">
+  <form #componentForm="ngForm" (ngSubmit)="!componentForm.valid || saveOrUpdate()" novalidate>
+    <div  fxLayoutAlign="center center">
+      <mat-card class="content-form container-field-button" fxFlex="90%">
+        <mat-card-title>{{'EMPLOYEE_DATA' | translate }}</mat-card-title>
+        <div class="content-field"  fxLayout="column" >
+          <div fxLayoutGap="20px" fxLayout="row" fxFlex="100%" fxLayoutAlign="start center">
+            <mat-form-field fxFlex="1 1 100%">
+              <input matInput type="text"
+                     id="employee-nome"
+                     name="employee-nome"
+                     [(ngModel)]="entityForm.name"
+                     placeholder="{{'LABEL_NAME' | translate}}">
+            </mat-form-field>
+          </div>
+
+          <div fxLayoutGap="20px" fxLayout="row" fxFlex="100%">
+            <mat-form-field fxFlex="1 1 50%">
+              <input matInput type="text" id="user-login" name="user-login"
+                     fxFill=""
+                     maxlength="32"
+                     [(ngModel)]="user.login"
+                     placeholder="{{'LOGIN_NAME' | translate}}"
+                     autocomplete="nope">
+            </mat-form-field>
+            <mat-form-field  *ngIf="canChangeEmployeesPasswords" fxFlex="1 1 50%">
+              <input [type]="hide ? 'password' : 'text'"
+                     fxFill=""
+                     matInput
+                     id="user-password"
+                     name="user-password"
+                     maxlength="32"
+                     [(ngModel)]="user.password"
+                     placeholder="{{'LOGIN_PASSWORD' | translate}}"
+                     autocomplete="new-password" >
+              <mat-icon class="visiblity-password" matSuffix
+                        (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}
+              </mat-icon>
+            </mat-form-field>
+          </div>
+
+          <div fxLayoutGap="20px" fxLayout="row" fxFlex="100%" *ngIf="user.group_list">
+            <app-group-add-remove fxFlex="69%"
+                                  [items]="user.group_list"
+                                  [valuesAutoComplete]="groups"
+                                  [descPlaceholder]="'PROFILE_ASSIGN' | translate">
+            </app-group-add-remove>
+          </div>
+        </div>
+
+      </mat-card>
+    </div>
+    <app-footer-basic [requeridForm]="!componentForm.valid" [urlCancel]="'/employee'"></app-footer-basic>
+  </form>
+</div>

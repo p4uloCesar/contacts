@@ -1,0 +1,33 @@
+<div fxLayout="column" fxFlex="1 1 100%">
+  <div fxLayout="row" fxFlex="1 1 100%">
+    <mat-form-field fxFlex="1 1 100%" class="asteristico">
+      <input id="group" name="group" type="text" maxlength="104"
+             (input)="onKeyUpDescription($event.target.value)"
+             [(ngModel)]="modelDescription" matInput placeholder="{{descPlaceholder}}"
+             [matAutocomplete]="autodescription"
+             appFocus
+             [focus]="focusButton" >
+    </mat-form-field>
+    <mat-autocomplete #autodescription="matAutocomplete"
+                      [displayWith]="displayFnDescription"
+                      (optionSelected)="add($event)">
+      <mat-option *ngFor="let item of itemsFiltered()" [value]="item" >
+        <span>{{ item.name }}</span>
+      </mat-option>
+    </mat-autocomplete >
+
+    <button type="button"
+             class="button-aling"
+             mat-raised-button color="primary"
+             appFocus
+             [focus]="focusButton">
+      <i class="material-icons btn-icon">add</i>
+    </button>
+  </div>
+  <div fxLayoutAlign="start start" fxLayout="row">
+    <ul class="list-type-list">
+      <li *ngFor="let item of this.items"><div>{{item.name}}</div>
+        <i *ngIf="!enable_edit" class="material-icons btn-close" (click)="remove(item)">close</i></li>
+    </ul>
+  </div>
+</div>

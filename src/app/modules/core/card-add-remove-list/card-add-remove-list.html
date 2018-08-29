@@ -1,0 +1,58 @@
+<div  fxLayoutAlign="center center">
+  <mat-card class="content-form container-field-button" fxFlex="90%">
+    <mat-card-title>{{title}}</mat-card-title>
+    <div class="content-field" *ngIf="!disabled">
+
+      <div fxLayout="row" fxLayoutGap="10px" fxLayoutWrap="1" fxLayout.xs="column">
+        <mat-form-field fxFlex="1 1 30%">
+          <input matInput id="model_code" name="model_code" type="text" maxlength="40"
+                 (input)="onKeyUpCode($event.target.value)"
+                 [(ngModel)]="codeItem" placeholder="{{codPlaceholder}}" [matAutocomplete]="autocode">
+        </mat-form-field>
+          <mat-autocomplete #autocode="matAutocomplete" [displayWith]="displayFnCode" (optionSelected)="add($event)">
+          <mat-option *ngFor="let item of itemsFiltered('code')" [value]="item">
+            <span>{{ item.code }}</span>
+          </mat-option>
+        </mat-autocomplete>
+
+        <mat-form-field fxFlex="1 1 30%">
+          <input id="model_description" name="model_description" type="text" maxlength="40"
+                 (input)="onKeyUpDescription($event.target.value)"
+                 [(ngModel)]="this.descriptionItem" matInput placeholder="{{descPlaceholder}}"
+                 [matAutocomplete]="autodescription">
+        </mat-form-field>
+          <mat-autocomplete #autodescription="matAutocomplete" [displayWith]="displayFnDescription" (optionSelected)="add($event)">
+          <mat-option *ngFor="let item of itemsFiltered()" [value]="item">
+            <span>{{ item.description }}</span>
+          </mat-option>
+        </mat-autocomplete>
+
+        <button fxLayoutAlign="start start" type="button" class="mat-button btn-table add" (click)="this.addItem()" mat-button>
+          <i fxLayoutAlign="center" class="material-icons btn-icon">add</i>
+        </button>
+      </div>
+    </div>
+    <div  fxLayoutAlign="center center" >
+      <div class="scrollable-table-list" fxFlex="96%">
+        <table width="100%">
+          <thead>
+            <tr *ngIf="items.length > 0">
+              <th width="35%">{{'LABEL_CODE' | translate}}</th>
+              <th width="50%">{{'LABEL_DESCRIPTION' | translate}}</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of this.items">
+              <td width="35%">{{item.code}}</td>
+              <td width="50%">{{item.description}}</td>
+              <td class="td-align-right">
+                <i class="material-icons bt-list-model"  *ngIf="!disabled" (click)="this.remove(item)">delete</i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </mat-card>
+</div>
