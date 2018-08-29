@@ -2,274 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3fe1d3b-c798-484e-9cb4-d52e7babb0bf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/front-end.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/tsconfig.e2e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxy/localhost.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxy/localhost.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxy/nginx.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/app.component.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/guard/can-activate-auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/guard/can-activate-login.guard.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/guard/can-activate-login.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/main.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/main.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/main.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/main.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/mms-app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/mms.rounting.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/auth-token.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/cost-center.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/data-series.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/employee.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/group.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/ledger.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/model-base.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/permission.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/profile-configuration.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/profile-permission.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/profile.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/user-login.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/base-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/bread-crumb/bread-crumb.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/bread-crumb/bread-crumb.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/bread-crumb/bread-crumb.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/bread-crumb/bread-crumb.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/bread-crumb/item-url.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/card-add-remove-list/card-add-remove-list.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/card-add-remove-list/card-add-remove-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/card-add-remove-list/card-add-remove-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/card-add-remove-list/card-add-remove-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/core.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/custom-autocomplete/custom-autocomplete.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/custom-autocomplete/custom-autocomplete.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/custom-autocomplete/custom-autocomplete.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/custom-autocomplete/custom-autocomplete.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/dialog/dialog.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/dialog/dialog.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/dialog/dialog.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/dialog/dialog.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/focus/focus.directive.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/footer-basic/footer-basic.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/footer-basic/footer-basic.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/footer-basic/footer-basic.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/footer-basic/footer-basic.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/mat-chip-autocomplete/mat-chip-autocomplete.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/mat-chip-autocomplete/mat-chip-autocomplete.component.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/mat-chip-autocomplete/mat-chip-autocomplete.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/mat-chip-autocomplete/mat-chip-autocomplete.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/mat-chip-autocomplete/mat-chip-autocomplete.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/mat-chip-autocomplete/mat-chip-autocomplete.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/no-whitespace-validator/no-whitespace-validator.directive.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/no-whitespace-validator/no-whitespace-validator.directive.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/no-whitespace-validator/no-whitespace.validator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/only-number-directive/only-number.directive.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/only-number-directive/only-number.directive.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/profile-autocomplete/profile-autocomplete.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/profile-autocomplete/profile-autocomplete.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/profile-autocomplete/profile-autocomplete.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/profile-autocomplete/profile-autocomplete.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/roles-directive/roles.directive.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/roles-directive/roles.directive.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/search-filter/search-filter.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/search-filter/search-filter.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/search-filter/search-filter.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/search-filter/search-filter.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/show-app/app-contains.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/show-app/show-app.directive.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/show-app/show-app.directive.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/tree-children/tree-children.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/tree-children/tree-children.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/tree-children/tree-children.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/core/tree-children/tree-children.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/cost-center/cost-center-list/cost-center-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/cost-center/cost-center-list/cost-center-list.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/cost-center/cost-center-list/cost-center-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/cost-center/cost-center-list/cost-center-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/cost-center/cost-center.module.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/cost-center/cost-center.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/crud/entity-dialog.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/crud/entity-edit.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/crud/entity-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/employee/employee-edit/employee-edit.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/employee/employee-edit/employee-edit.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/employee/employee-edit/employee-edit.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/employee/employee-edit/employee-edit.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/employee/employee-list/employee-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/employee/employee-list/employee-list.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/employee/employee-list/employee-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/employee/employee-list/employee-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/employee/employee.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/employee/group-add-remove/group-add-remove.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/employee/group-add-remove/group-add-remove.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/employee/group-add-remove/group-add-remove.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/employee/group-add-remove/group-add-remove.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/home/home.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/home/home/home.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/home/home/home.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/home/home/home.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/home/home/home.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/data-series-dialog/data-series-dialog.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/data-series-dialog/data-series-dialog.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/data-series-dialog/data-series-dialog.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/data-series-dialog/data-series-dialog.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/data-series-list/data-series-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/data-series-list/data-series-list.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/data-series-list/data-series-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/data-series-list/data-series-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/ledger-list/ledger-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/ledger-list/ledger-list.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/ledger-list/ledger-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/ledger-list/ledger-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/ledger.module.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/ledger/ledger.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/login/login.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/login/login/login.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/login/login/login.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/login/login/login.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/login/login/login.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/profile-configuration/profile-configuration-edit/profile-configuration-edit.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/profile-configuration/profile-configuration-edit/profile-configuration-edit.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/profile-configuration/profile-configuration-edit/profile-configuration-edit.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/profile-configuration/profile-configuration-edit/profile-configuration-edit.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/profile-configuration/profile-configuration-list/profile-configuration-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/profile-configuration/profile-configuration-list/profile-configuration-list.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/profile-configuration/profile-configuration-list/profile-configuration-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/profile-configuration/profile-configuration-list/profile-configuration-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modules/profile-configuration/profile-configuration.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/auth-token-storage-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/auth-token.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/auth-token.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/base.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/cost-center.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/cost-center.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/data-series.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/data-series.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/employee.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/group.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/http-interceptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/language-storage.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/ledger.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/ledger.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/login.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/permission.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/profile-configuration.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/profile-permission.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/title-page.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/toast-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/user.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/websocket.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/translate/TranslateModule.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/translate/docontrol/lang-en.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/translate/docontrol/lang-pt.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/translate/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/translate/lang-en.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/translate/lang-pt.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/translate/mms/lang-en.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/translate/mms/lang-pt.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/translate/translate.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/translate/translate.pipe.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/translate/translate.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/translate/translation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/utils/constants-app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/utils/format-hour.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/utils/generic-data-base.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/utils/generic-data-source.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/utils/masks.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/utils/paginated-configuration.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/utils/paginated-result.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/utils/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/data/actual_expense.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/MaterialIcons-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/MaterialIcons-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/MaterialIcons-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/MaterialIcons-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-bold-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-bold-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-bold-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-bold-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-bold-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-light-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-light-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-light-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-light-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-light-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-medium-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-medium-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-medium-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-medium-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-medium-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-regular-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-regular-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-regular-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-regular-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto-regular-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto/Roboto-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto/Roboto-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto/Roboto-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto/Roboto-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto/Roboto-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto/Roboto-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto/Roboto-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto/Roboto-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto/Roboto-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/roboto/Roboto-Thin.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/ic_broken_image_black_24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/MaterialIcons-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/MaterialIcons-Regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/MaterialIcons-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/MaterialIcons-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/MaterialIcons-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/ic_add_white_24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Group.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/bg-login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/fundo_aprovado.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/imagem_min.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logo/logo_empresa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logo/logo_fpf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logo/logo_login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logo/logo_menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logo/logo_menu_minimized.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/environments/environment.mms.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/quill.snow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/style-paths/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -282,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name=".dockerignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.dockerignore">
           <provider selected="true" editor-type-id="text-editor">
@@ -296,6 +29,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="developer" />
+      </map>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
@@ -372,25 +110,34 @@
       <option name="presentableId" value="Default" />
       <updated>1535566755541</updated>
       <workItem from="1535566757232" duration="684000" />
-      <workItem from="1535567879228" duration="338000" />
+      <workItem from="1535567879228" duration="1474000" />
     </task>
+    <task id="LOCAL-00001" summary="primeiro commit">
+      <created>1535568306755</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1535568306755</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1022000" />
+    <option name="totallyTimeSpent" value="2158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32838285" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32838285" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -407,6 +154,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="primeiro commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="primeiro commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.dockerignore">
